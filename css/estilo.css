@@ -3,14 +3,19 @@
 		display: grid;
 		grid-template-areas: 
 		"header"
+		"nav"
 		"main"
 		"footer";
 		grid-template-columns: 100%;
-		grid-template-rows: 100px 500px 200px;
+		grid-template-rows: 100px 100px 500px 200px;
 	}
 	header{
 		grid-area: header;
 		background-color: rgba(255,255,255,.3);
+	}
+	nav{
+		grid-area: nav;
+		background-color: lightcoral;
 	}
 	main{
 		grid-area: main;
@@ -30,7 +35,6 @@
 	}
 	ul{
 		display: flex;
-		width: 100%;
 		justify-content: flex-end;
 	}
 }
@@ -39,15 +43,19 @@
 		.gridContainer{
 		display: grid;
 		grid-template-areas: 
-		"header"
-		"main"
-		"footer";
-		grid-template-columns: 100%;
+		"header nav nav"
+		"main main main"
+		"footer footer footer";
+		grid-template-columns: 20% 40% 40%;
 		grid-template-rows: 100px 500px 200px;
 	}
 	header{
 		grid-area: header;
 		background-color: red;
+	}
+	nav{
+		grid-area: nav;
+		background-color: orange;
 	}
 	main{
 		grid-area: main;
@@ -67,7 +75,6 @@
 	}
 	ul{
 		display: flex;
-		width: 100%;
 		justify-content: flex-end;
 	}
 }
